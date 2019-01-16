@@ -1,0 +1,87 @@
+<!doctype Html>
+<html>
+ <head>
+  <title>Home</title>
+     <link rel="stylesheet" type="text/css" href="css/Jan.css">
+	 <link rel="stylesheet" type="text/css" href="css/Jan1.css">
+   	<link rel="icon" href="picture/logo.png"/>
+	 
+	<a href="intro.html"><img class="icon2" src="picture/icon2.png"></a>
+  </head>	
+  <body>
+  <div class="homebox">
+
+<div id="slide" class="hbox1">	
+
+ <div class="hbox1-1">
+	  <img class="hp1" src="picture/pic2.png"> 
+	  <div class="namebar">
+<b>Ambivert</b>
+	   <div class="bottom-centered"><h1><script language="javascript">
+                      var currMonth, currDate, currYear;
+	                  var dateObj = new Date();
+                   	  var monthsArr = new Array();
+	                  currMonth = dateObj.getMonth();
+	                  currDate = dateObj.getDate();
+	                  currYear = dateObj.getFullYear();
+	                  monthsArr[0] = "January";
+	                  monthsArr[1] = "February";
+	                  monthsArr[2] = "March";
+	                  monthsArr[3] = "April";
+	                  monthsArr[4] = "May";
+	                  monthsArr[5] = "June";
+	                  monthsArr[6] = "July";
+	                  monthsArr[7] = "August";
+	                  monthsArr[8] = "September";
+	                  monthsArr[9] = "October";
+	                  monthsArr[10] = "November";
+	                  monthsArr[11] = "December";
+	                  document.write (monthsArr[currMonth] + "  " + currDate + " , "+currYear);
+	                 </script></div>
+	                 <div class="bottom-centere"><script type="text/javascript">
+                     function startTime()
+                     {
+                     var today=new Date();
+                     var h=today.getHours();
+		             if(h>12)
+		             h = h -12
+                     var m=today.getMinutes();
+                     var s=today.getSeconds();
+            
+                     m=checkTime(m);
+                     s=checkTime(s);
+                     if(h<12)
+                     document.getElementById('clock').innerHTML=h+":"+m+":"+s + " PM ";
+                     else
+                     document.getElementById('clock').innerHTML=h+":"+m+":"+s + " AM";
+ 
+                     t=setTimeout('startTime()',500);
+                     }
+		        
+                     function checkTime(i)
+                     {
+                     if (i<10)
+                     {
+                     i="0" + i;
+                     }
+                     return i;
+                     }		
+                     </script>	    
+	                 <div id="clock"></div>
+                     <script type="text/javascript" style="box-sizing:border-box ; width:500px">startTime();</script></h1></div>
+            
+</div>
+</div>
+</div>
+<a href="pages/timeline.html">
+<div id="demotext" class="menu">
+      Timeline
+</div></a>
+<a href="pages/experiences.html">
+<div id="demotext" class="menu1">
+      Experiences
+</div></a>
+</div>
+</body>
+
+</html>

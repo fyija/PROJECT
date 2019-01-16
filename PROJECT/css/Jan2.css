@@ -1,0 +1,48 @@
+.bb1{
+	     padding:10px 19px;
+		 margin-top:3px;	
+         margin-left:-6px;		 
+		 background-size:cover;
+		 background-repeat:no-repeat;
+		 background-image:url("../picture/bground.png");
+		 background-attachment:fixed;
+		 min-height:900px;
+         width: 1368px; 
+         box-sizing: border-box;
+		 
+} 	
+
+.span1{
+	   margin-left:700px;
+	   margin-top:85px;
+}
+
+.boxz {
+margin-left:-800px;
+width: 60em;
+height: 4em;
+font-size: 1em;
+text-align:center;
+font-family: tahoma;
+color: white;
+padding:10px;
+background-color: #464646;
+transition: width 2s;
+}
+
+span {
+display: none;
+} 
+
+.boxz:hover{
+height: 48em;		
+transition:3s;
+background-color:white;
+color:black;
+}
+.boxz:hover .elemento1 {
+display: block;
+margin-top:400px;
+width: 60em;
+margin-top:450px;
+}
